@@ -28,6 +28,9 @@ header section h1 {
   font-size: 2.5rem;
   color: #f99d1c;
 }
+header section p {
+  color: #fff;
+}
 header section h1, header section p {
   margin-bottom: 2rem;
 }
