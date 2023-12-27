@@ -1,5 +1,76 @@
-p {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Allerta&family=Roboto:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tahoma", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100dvh;
+}
+
+header {
+  background-color: #4f4f4f;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+header section {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.3fr;
+  gap: 2rem;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+}
+header section h1 {
+  font-size: 2.5rem;
+  color: #f99d1c;
+}
+header section h1, header section p {
+  margin-bottom: 2rem;
+}
+header section figure {
+  width: 120px;
+}
+header section figure img {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0rem 0.5rem 15rem;
+  gap: 2rem;
+  background-color: #f99d1c;
+}
+header nav figure {
+  width: 30px;
+}
+header nav figure img {
+  width: 100%;
+}
+header nav .mdHidden {
+  display: none;
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #4f4f4f;
+}
+
+main {
+  background: #eceaea;
+}
+
+footer {
+  background-color: #161616;
 }
 
 /*# sourceMappingURL=styles.css.map */
