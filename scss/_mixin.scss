@@ -4,5 +4,39 @@
         padding: 0;
         box-sizing: border-box;
         font-family: $ceoDokument;
-    }    
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: 1000px) {
+        main {
+            section {
+                width: 100% !important;
+
+                // padding: 0rem !important;
+                .zeldaArticle {
+                    margin-top: 2rem !important;
+                }
+            }
+
+            .container {
+                display: flex !important;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@mixin mobilni {
+    @media only screen and (max-width: 600px) {
+        section {
+            display: flex !important;
+            flex-direction: column !important;
+
+            .container {
+                flex-direction: column !important;
+            }
+        }
+    }
 }

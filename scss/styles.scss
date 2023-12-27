@@ -10,53 +10,67 @@ body {
 }
 
 header {
-    background-color: $sivaHeader;
+    background-color: $gameNames;
     display: grid;
     grid-template-rows: 1fr auto;
+
     section {
         display: grid;
         grid-template-columns: 0.1fr 1fr 0.3fr;
         gap: 2rem;
         align-items: flex-end;
         padding-left: 0.5rem;
+
         h1 {
             font-size: 2.5rem;
             color: $navBoja;
 
         }
+
         p {
             color: #fff;
         }
-        h1,p {
+
+        h1,
+        p {
             margin-bottom: 2rem;
         }
+
         figure {
             width: 120px;
+
             img {
                 width: 100%;
             }
         }
     }
+
     nav {
         display: flex;
         align-items: center;
         padding: 0.5rem 0rem 0.5rem 15rem;
         gap: 2rem;
         background-color: $navBoja;
+
         figure {
             width: 30px;
+
             img {
                 width: 100%;
             }
         }
+
         .mdHidden {
             display: none;
         }
+
         ul {
             display: flex;
             gap: 2rem;
+
             li {
                 list-style-type: none;
+
                 a {
                     text-decoration: none;
                     color: $sivaHeader;
@@ -68,8 +82,67 @@ header {
 
 main {
     background: #eceaea;
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    section {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding: 2rem;
+
+
+        .formDiv {
+            grid-column: span 1 / span 1;
+            padding: 2rem 0rem;
+
+            form {
+                display: grid;
+                grid-template-rows: repeat(7, 1fr);
+                background: $sivaHeader;
+
+                div {
+                    display: grid;
+                    grid-template-rows: repeat(2, 1fr);
+                    justify-content: center;
+                }
+            }
+        }
+
+        .container {
+
+            grid-column: span 3 / span 3;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0 5rem;
+            background-color: #dfdbdb;
+
+
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+
+
+
+
+
+            }
+        }
+    }
+
+    article {}
 }
 
 footer {
     background-color: $gameNames;
 }
+
+@include mobilni;
+@include tablet;

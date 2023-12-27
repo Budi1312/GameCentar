@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <section>
@@ -15,20 +17,79 @@
             <h1>Igrice za sve uzraste</h1>
             <p>Broj telefona: 021 55 56 660</p>
         </section>
-       <nav>
-        <figure>
-            <img src="slike/game-console.svg" alt="console">
-        </figure>
-        <div class="mdHidden">Kategorije</div>
-        <ul>
-            <li><a href="#">Playstation</a></li>
-            <li><a href="#">Nintendo</a></li>
-            <li><a href="#">XBox</a></li>
-            <li><a href="#">PC</a></li>
-        </ul>
-       </nav>
+        <nav>
+            <figure>
+                <img src="slike/game-console.svg" alt="console">
+            </figure>
+            <div class="mdHidden">Kategorije</div>
+            <ul>
+                <li><a href="#">Playstation</a></li>
+                <li><a href="#">Nintendo</a></li>
+                <li><a href="#">XBox</a></li>
+                <li><a href="#">PC</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>Main</main>
+    <main>
+        <section>
+            <div class="formDiv">
+                <form action="#">
+                    <div>
+                        <label for="igrice">Naziv igrice</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="konzole">Naziv konzole</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="uzrast">Uzrast</label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label for="zanr">Zanr</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="cena">Cena</label>
+                        <input type="range">
+                    </div>
+                    <div>
+                        <label for="ocena">Ocena</label>
+                        <input type="range">
+                    </div>
+                    <div>
+                        <button>Pretrazi</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <article>
+                    <figure>
+                        <img height="180dvh" width="150dvh" src="slike/dark-souls.jpeg" alt="dark">
+                    </figure>
+                    <span>zvezdice</span>
+                    <p>Dark Souls</p>
+                </article>
+                <article class="zeldaArticle">
+                    <figure>
+                        <img height="180dvh" width="150dvh" src="slike/zelda.jpeg" alt="dark">
+                    </figure>
+                    <span>zvezdice</span>
+                    <p>Zelda: Breath pf whe Wild</p>
+                </article>
+                <article>
+                    <figure>
+                        <img height="180dvh" width="150dvh" src="slike/fifa-21.jpeg" alt="fifa">
+                    </figure>
+                    <span>zvezdice</span>
+                    <p>Fifa 2021</p>
+                </article>
+            </div>
+        </section>
+        <article style="background-color: #161616;">drugi row</article>
+    </main>
     <footer>Footer</footer>
 </body>
+
 </html>
