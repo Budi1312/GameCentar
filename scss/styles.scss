@@ -13,45 +13,36 @@ header {
     background-color: $gameNames;
     display: grid;
     grid-template-rows: 1fr auto;
-
     section {
         display: grid;
         grid-template-columns: 0.1fr 1fr 0.3fr;
         gap: 2rem;
         align-items: flex-end;
         padding-left: 0.5rem;
-
         h1 {
             font-size: 2.5rem;
             color: $navBoja;
-
         }
-
         p {
             color: #fff;
         }
-
         h1,
         p {
             margin-bottom: 2rem;
         }
-
         figure {
             width: 120px;
-
             img {
                 width: 100%;
             }
         }
     }
-
     nav {
         display: flex;
         align-items: center;
         padding: 0.5rem 0rem 0.5rem 15rem;
         gap: 2rem;
         background-color: $navBoja;
-
         figure {
             width: 30px;
 
@@ -59,18 +50,14 @@ header {
                 width: 100%;
             }
         }
-
         .mdHidden {
             display: none;
         }
-
         ul {
             display: flex;
             gap: 2rem;
-
             li {
                 list-style-type: none;
-
                 a {
                     text-decoration: none;
                     color: $sivaHeader;
@@ -84,43 +71,48 @@ main {
     background: #eceaea;
     display: grid;
     grid-template-rows: auto 1fr;
-
     section {
         width: 90%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
-        padding: 2rem;
-
-
+        padding: 2rem 2rem 2rem 0rem;
         .formDiv {
             grid-column: span 1 / span 1;
             padding: 2rem 0rem;
-
             form {
                 display: grid;
                 grid-template-rows: repeat(7, 1fr);
                 background: $sivaHeader;
-
+                text-align: center;
+                color: #dfdbdb;
                 div {
-                    display: grid;
-                    grid-template-rows: repeat(2, 1fr);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     justify-content: center;
+                    input {
+                        padding: 0.5rem;
+                        border-radius: 0.4rem;
+                        border: none;
+                    }
+                    button {
+                        color: $navBoja;
+                        padding: 0.8rem;
+                        border-radius: 0.4rem;
+                        border: none;
+                    }
                 }
             }
         }
-
         .container {
-
             grid-column: span 3 / span 3;
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: repeat(3, 1fr);
             padding: 0 5rem;
             background-color: #dfdbdb;
-
-
             article {
                 display: flex;
                 flex-direction: column;
@@ -128,21 +120,53 @@ main {
                 gap: 0.5rem;
                 align-items: center;
                 text-align: center;
-
-
-
-
-
-
+                transition: 3s transform ease-in-out;
+                img {
+                    transition: 1s transform ease-in-out;
+                }
+                img:hover {
+                    transform: scale(1.15);   
+                }
             }
         }
     }
-
-    article {}
+    .drugiRow {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 0rem 2rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        .drugiRowDiv{
+            display: flex;
+            gap: 3rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;   
+                p {
+                    width: 17ch;
+                }
+                .objekti, .naj {
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .divMapa {
+            p {
+                text-align: end;
+                font-style: italic;
+            }
+        }
+    }
 }
 
 footer {
     background-color: $gameNames;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: white
 }
 
 @include mobilni;

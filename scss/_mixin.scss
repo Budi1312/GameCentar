@@ -14,7 +14,7 @@
         }
         main {
             section {
-                width: 100% !important;
+                // width: 100% !important;
                 .zeldaArticle {
                     margin-top: 2rem !important;
                 }
@@ -45,7 +45,7 @@
 }
 
 @mixin mobilni {
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 650px) {
         header {
             section {
                 display: none!important;
@@ -89,6 +89,7 @@
         section {
             display: flex !important;
             flex-direction: column !important;
+            padding: 2rem 0rem!important;
             gap: 0rem!important;
             .formDiv {
                 padding: 0rem!important;
@@ -96,11 +97,26 @@
             .container {
                 display: flex!important;
                 flex-direction: column;
-                width: 70%;
+                width: 80%;
                 margin: 0 auto;
                 padding: 4rem 0rem!important;
                 .zeldaArticle {
                     grid-column: span 1!important;
+                }
+            }
+        }
+        .drugiRow {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+            padding: 0!important;
+            .divMapa {
+                width: fit-content;
+                p {
+                    text-align: center!important;
                 }
             }
         }

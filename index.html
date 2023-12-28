@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="slike/game-console.svg"/>
 </head>
 
 <body>
@@ -31,32 +32,32 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="mainSekcija">
             <div class="formDiv">
                 <form action="#">
                     <div>
                         <label for="igrice">Naziv igrice</label>
-                        <input type="text">
+                        <input type="text" name="igrice" id="igrice">
                     </div>
                     <div>
                         <label for="konzole">Naziv konzole</label>
-                        <input type="text">
+                        <input type="text" name="konzole" id="konzole">
                     </div>
                     <div>
                         <label for="uzrast">Uzrast</label>
-                        <input type="number">
+                        <input type="number" name="uzrast" id="uzrast">
                     </div>
                     <div>
                         <label for="zanr">Zanr</label>
-                        <input type="text">
+                        <input type="text" name="zanr" id="zanr">
                     </div>
                     <div>
                         <label for="cena">Cena</label>
-                        <input type="range">
+                        <input type="range" name="cena" id="cena">
                     </div>
                     <div>
                         <label for="ocena">Ocena</label>
-                        <input type="range">
+                        <input type="range" name="ocena" id="ocena">
                     </div>
                     <div>
                         <button>Pretrazi</button>
@@ -68,28 +69,56 @@
                     <figure>
                         <img height="180dvh" width="150dvh" src="slike/dark-souls.jpeg" alt="dark">
                     </figure>
-                    <span>zvezdice</span>
+                    <span>Zvezdice</span>
                     <p>Dark Souls</p>
                 </article>
                 <article class="zeldaArticle">
                     <figure>
                         <img height="180dvh" width="150dvh" src="slike/zelda.jpeg" alt="dark">
                     </figure>
-                    <span>zvezdice</span>
+                    <span>Zvezdice</span>
                     <p>Zelda: Breath pf whe Wild</p>
                 </article>
                 <article>
                     <figure>
                         <img height="180dvh" width="150dvh" src="slike/fifa-21.jpeg" alt="fifa">
                     </figure>
-                    <span>zvezdice</span>
+                    <span>Zvezdice</span>
                     <p>Fifa 2021</p>
                 </article>
             </div>
         </section>
-        <article style="background-color: #161616;">drugi row</article>
+        <article class="drugiRow">
+            <div class="drugiRowDiv">
+                <div>
+                    <p>Ko smo mi?</p>
+                    <p>Pravilnik o utiscima</p>
+                    <p>Pravila o zastiti licnih podataka</p>
+                    <p>Nacini placanja</p>
+                </div>
+                <div>
+                    <p>Kontaktirajte nas</p>
+                    <p>Kako radi</p>
+                    <p class="objekti">Objekti</p>
+                </div>
+                <div>
+                    <p>Izjava o privatnosti</p>
+                    <p>Da li imate objekat?</p>
+                    <p class="naj">Najcesce postavljena pitanja</p>
+                </div>
+            </div>
+            <div class="divMapa">
+                <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=laze%20nancica%2036&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 340px; height: 240px;"></iframe><style>.mapouter{position:relative;height:240px;width:340px;background:#fff;} .maprouter a{color:#fff !important;position:absolute !important;top:0 !important;z-index:0 !important;}</style><a href="https://blooketjoin.org/blooket-host/">blooket host</a><style>.gmap_canvas{overflow:hidden;height:240px;width:340px}.gmap_canvas iframe{position:relative;z-index:2}</style></div></div>
+                <p>Futoski put BB</p>
+                <p>21000 Novi Sad</p>
+            </div>    
+        </article>
     </main>
-    <footer>Footer</footer>
+    <footer>
+        <figure>
+            <img width="30dvh" src="slike/game-console.svg" alt="logo">
+        </figure>
+        <p>Game Side | Copyright 2021 ©</p>
+    </footer>
 </body>
-
 </html>
