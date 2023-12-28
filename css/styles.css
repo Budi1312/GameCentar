@@ -80,7 +80,7 @@ main section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  padding: 2rem 2rem 2rem 0rem;
+  padding: 2.1rem 2rem 2rem 0rem;
 }
 main section .formDiv {
   grid-column: span 1/span 1;
