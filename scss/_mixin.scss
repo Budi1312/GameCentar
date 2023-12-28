@@ -7,6 +7,13 @@
     }
 }
 
+@mixin flexMixin($justify,$align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    @content;
+}
+
 @mixin tablet {
     @media only screen and (max-width: 1200px) {
         ul {
@@ -14,7 +21,6 @@
         }
         main {
             section {
-                // width: 100% !important;
                 .zeldaArticle {
                     margin-top: 2rem !important;
                 }
