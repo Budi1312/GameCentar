@@ -125,6 +125,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                gap: 0.5rem;
                 align-items: center;
                 text-align: center;
 
@@ -146,3 +147,4 @@ footer {
 
 @include mobilni;
 @include tablet;
+@include srednji;

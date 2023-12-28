@@ -108,6 +108,7 @@ main section .container article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.5rem;
   align-items: center;
   text-align: center;
 }
@@ -116,25 +117,85 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  header section {
+    display: none !important;
+  }
+  header nav {
+    display: grid;
+    padding: 1rem !important;
+    gap: 0rem !important;
+  }
+  header nav .mdHidden {
+    display: grid !important;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1rem;
+  }
+  header nav .mdHidden:hover {
+    background-color: #eaf09b;
+  }
+  header nav .mdHidden:hover + ul {
+    display: grid !important;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem !important;
+    cursor: pointer;
+  }
+  header nav ul:hover {
+    display: grid !important;
+    padding: 0rem !important;
+    text-align: center;
+    gap: 0rem !important;
+  }
+  header nav ul:hover li {
+    padding: 1rem;
+  }
+  header nav ul:hover li:hover {
+    background-color: #eaf09b;
+  }
   section {
     display: flex !important;
     flex-direction: column !important;
+    gap: 0rem !important;
+  }
+  section .formDiv {
+    padding: 0rem !important;
   }
   section .container {
-    flex-direction: column !important;
+    display: flex !important;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    padding: 4rem 0rem !important;
+  }
+  section .container .zeldaArticle {
+    grid-column: span 1 !important;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
+  ul {
+    display: none !important;
+  }
   main section {
     width: 100% !important;
   }
   main section .zeldaArticle {
     margin-top: 2rem !important;
   }
-  main .container {
-    display: flex !important;
-    flex-wrap: wrap;
+}
+@media only screen and (max-width: 950px) {
+  .container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     justify-content: center;
+    gap: 1rem;
+    padding: 0rem 2rem !important;
+  }
+  .container article:last-child {
+    grid-column: span 2;
+  }
+  .container .zeldaArticle {
+    margin-top: 0rem !important;
   }
 }
 
